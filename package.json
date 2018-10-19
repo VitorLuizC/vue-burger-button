@@ -1,0 +1,36 @@
+{
+  "name": "vue-burguer-button",
+  "version": "0.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VitorLuizC/vue-burguer-button.git"
+  },
+  "keywords": [
+    "vue",
+    "vue-component",
+    "burguer",
+    "burguer-button",
+    "burguer-menu",
+    "burger-button-component",
+    "button",
+    "close-button",
+    "hamburguer",
+    "hamburguer-button",
+    "burguer-button-component",
+    "front-end",
+    "material"
+  ],
+  "author": {
+    "name": "Vitor Luiz Cavalcanti",
+    "url": "https://vitorluizc.github.io/",
+    "email": "vitorluizc@outlook.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VitorLuizC/vue-burguer-button/issues"
+  },
+  "homepage": "https://github.com/VitorLuizC/vue-burguer-button#readme"
+}
