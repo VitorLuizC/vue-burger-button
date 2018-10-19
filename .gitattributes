@@ -1,0 +1,2 @@
+# Treat as text when is possible and ensure Unix line-endings.
+* text=auto eol=lf
