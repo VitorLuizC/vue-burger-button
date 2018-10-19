@@ -2,7 +2,8 @@
   "name": "vue-burguer-button",
   "version": "0.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "poi src/index.js"
   },
   "repository": {
     "type": "git",
@@ -32,5 +33,10 @@
   "bugs": {
     "url": "https://github.com/VitorLuizC/vue-burguer-button/issues"
   },
-  "homepage": "https://github.com/VitorLuizC/vue-burguer-button#readme"
+  "homepage": "https://github.com/VitorLuizC/vue-burguer-button#readme",
+  "devDependencies": {
+    "poi": "^10.2.10",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
+  }
 }
