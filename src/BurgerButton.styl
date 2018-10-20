@@ -1,27 +1,37 @@
-.BurgerButton
-  padding: 0 0 0 0
-  border: 0 none transparent
-  background: none transparent
-  cursor: pointer
+.burguer-button
+  &
+    appearance: none
+    padding-top: 0
+    padding-left: 0
+    padding-right: 0
+    padding-bottom: 0
+    border-width: 0
+    border-style: none
+    border-color: transparent
+    background-image: none
+    background-color: transparent
+    outline: none
+    cursor: pointer
 
-  .BurgerButton__bar
+  > .bar
     display: block
     border-radius: 25px
     background-color: #000000
-    transition: background-color .2s ease-in, transform .2s ease-out
+    transition: opacity .2s ease-in,
+                transform .2s ease-out
 
-    &:nth-child(1)
+  > .bar:nth-child(1)
       transform: translateY(-75%)
 
-    &:nth-child(3)
+  > .bar:nth-child(3)
       transform: translateY(75%)
 
-  &.BurgerButton--active .BurgerButton__bar
-    &:nth-child(2)
-      background-color: transparent
+  &.-active
+    > .bar:nth-child(2)
+      opacity: 0
 
-    &:nth-child(1)
+    > .bar:nth-child(1)
       transform: translateY(100%) rotate(45deg)
 
-    &:nth-child(3)
+    > .bar:nth-child(3)
       transform: translateY(-100%) rotate(-45deg)
