@@ -23,4 +23,4 @@
   };
 </script>
 
-<style src="../dist/vue-burguer-button.css" />
+<style src="../dist/vue-burger-button.css" />
