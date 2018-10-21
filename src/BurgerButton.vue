@@ -1,19 +1,35 @@
-<template>
+<template functional>
   <button
-    :class="['burguer-button', { '-active': active }]"
-    :style="style.button"
-    :aria-expanded="active ? 'true' : 'false'"
+    v-bind="data.attrs"
+    v-on="data.on"
+    :aria-expanded="props.active ? 'true' : 'false'"
+    :class="[
+      'burguer-button',
+      { '-active': props.active },
+      data.class,
+      data.staticClass,
+    ]"
+    :style="{
+      width: props.barWidth + 'px',
+      height: props.barHeight * 6 + 'px'
+    }"
     aria-label="Menu"
     aria-controls="navigation"
-    @click.prevent="$emit('click', $event)"
   >
-    <span class="bar" v-for="index in 3" :key="index" :style="style.bar" />
+    <span
+      class="bar"
+      v-for="index in 3"
+      :key="index"
+      :style="{
+        width: props.barWidth + 'px',
+        height: props.barHeight + 'px',
+        backgroundColor: props.barColor
+      }"
+    />
   </button>
 </template>
 
 <script>
-  const px = (value) => String(value) + 'px';
-
   export default {
     name: 'BurgerButton',
     props: {
@@ -29,21 +45,6 @@
       barColor: {
         type: String,
         default: '#000000'
-      }
-    },
-    computed: {
-      style () {
-        return {
-          button: {
-            width: px(this.barWidth),
-            height: px(this.barHeight * 6)
-          },
-          bar: {
-            width: px(this.barWidth),
-            height: px(this.barHeight),
-            backgroundColor: this.barColor
-          }
-        };
       }
     }
   };
