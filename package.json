@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "poi examples/index.js"
+    "start": "poi examples/index.js",
+    "build": "bili"
   },
   "repository": {
     "type": "git",
@@ -35,7 +36,10 @@
   },
   "homepage": "https://github.com/VitorLuizC/vue-burguer-button#readme",
   "devDependencies": {
+    "bili": "^3.1.2",
     "poi": "^10.2.10",
+    "rollup-plugin-css-only": "^0.4.0",
+    "rollup-plugin-vue": "^4.3.2",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2"
   }
