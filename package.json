@@ -1,6 +1,12 @@
 {
   "name": "vue-burguer-button",
   "version": "0.0.0",
+  "cdn": "dist/vue-burguer-button.min.js",
+  "main": "dist/vue-burguer-button.cjs.js",
+  "unpkg": "dist/vue-burguer-button.min.js",
+  "module": "dist/vue-burguer-button.es.js",
+  "jsdelivr": "dist/vue-burguer-button.min.js",
+  "umd:main": "dist/vue-burguer-button.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "poi examples/index.js",
