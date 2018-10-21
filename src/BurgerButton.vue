@@ -6,8 +6,8 @@
     :class="[
       'burguer-button',
       { '-active': props.active },
-      data.class,
       data.staticClass,
+      data.class
     ]"
     :style="{
       width: props.barWidth + 'px',

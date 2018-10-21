@@ -11,6 +11,6 @@ module.exports = {
   filename: `${name}[suffix].js`,
   plugins: [
     vue({ css: false }),
-    css({ output: `dist/${name}.css` }),
+    css({ output: `dist/${name}.css` })
   ]
 };
