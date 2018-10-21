@@ -1,6 +1,6 @@
 {
   "name": "vue-burger-button",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "cdn": "dist/vue-burger-button.min.js",
   "main": "dist/vue-burger-button.cjs.js",
   "unpkg": "dist/vue-burger-button.min.js",
