@@ -1,5 +1,6 @@
 {
   "name": "vue-burger-button",
+  "description": "A Vue burger button as functional component, which is faster than a regular component, and is pretty small (JS min+gzip is lower than 700b and CSS min+gzip is lower than 400b).",
   "version": "0.1.0",
   "cdn": "dist/vue-burger-button.min.js",
   "main": "dist/vue-burger-button.cjs.js",
